@@ -1,4 +1,4 @@
-# Color-by-Number Cartography with CartoDB
+# Color-by-Number Cartography + CartoDB
 
 ### CONTENTS
 This repo contains "code checkpoints" for a workshop at the University of Maryland outlined [here]().
@@ -16,6 +16,8 @@ The **Census Map** that we worked on in the workshop presumes limited knowledge 
 * BONUS! Charts - ckpt-5-chart
 
 All images used in the tutorial are available in the `img` directory.
+
+<img src="https://raw.githubusercontent.com/auremoser/uofm-2015/master/img/divinging-map.png" align="center" alt="maryland flag" margin="5px" height="450" width="700">
 
 ### LINKS
 Here are some helpful references for moving forward or troubleshooting what you find here:
