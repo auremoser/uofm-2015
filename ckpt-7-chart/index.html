@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 <title>Accidents Per Capita per County</title>
+	 <script src="http://www.chartjs.org/assets/Chart.js"></script>
+	 <meta name = "viewport" content = "initial-scale = 1, user-scalable = no">
+        <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+		<script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+		<style>
+		  canvas {
+        height: 500px;
+        margin: 5px;
+        width: 2000px;
+			}
+		</style>
+	</head>
+	<body>
+    <canvas id="canvas"></canvas>
+    <script>
+
+      var sql = cartodb.SQL({ user: 'aureliamoser' });
+
+      sql.execute("SELECT ac.the_geom_webmercator, ac.population, ta.county_name, ceil(100000 * ta. number_crash / ac. population) crashes_per_capita, ceil(100000 * ta.number_fatality / ac.population) fatalities_per_capita FROM traffic_accidents ta, atl_census_demo_2010 ac WHERE ac.county_name = ta.county_name ORDER BY ac.county_name ASC")
+          .done(function(data) {
+        	 console.log(data);
+
+      var total = [];
+      var labels  = [];
+
+      for (i in data.rows) {
+        total.push(data.rows[i].fatalities_per_capita);
+        labels.push(data.rows[i].county_name);
+      }
+        console.log(data);
+        var lineChartData = {
+    			labels : labels,
+    		  datasets : [
+    				{
+                barDatasetSpacing : 0,
+                barValueSpacing : 0,
+                fillColor : "#41b6c4",
+    						strokeColor : "#005824",
+    						pointColor : "#CCECE6",
+    						pointStrokeColor : "#fff",
+    						data : total
+    				}
+    			]
+			   }
+      var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Bar(lineChartData);
+	   });
+	 </script>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Template | CartoDB</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <link rel="shortcut icon" href="http://cartodb.com/assets/favicon.ico" />
+
+    <link rel="stylesheet" href="http://libs.cartocdn.com/cartodb.js/v3/themes/css/cartodb.css" />
+
+    <style>
+      html, body, #map {
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+    </style>
+
+    <!-- SQL TEMPLATE -->
+    <script type='sql/text' id='sql'>
+      SELECT *, 100 * awater / ST_Area(the_geom::geography) perc_water
+      FROM tl_2014_census_tracts
+    </script>
+
+    <!-- CHOROPLETH CSS -->
+    <style type='cartocss/text' id='choropleth'>
+    /** choropleth visualization */
+    #tl_2014_census_tracts{
+      polygon-fill: #FFFFCC;
+      polygon-opacity: 0.8;
+      line-color: #FFF;
+      line-width: 0;
+      line-opacity: 1;
+    }
+    #tl_2014_census_tracts [ perc_water <= 100.829766103904] {
+       polygon-fill: #253494;
+    }
+    #tl_2014_census_tracts [ perc_water <= 6.89127773835036] {
+       polygon-fill: #2C7FB8;
+    }
+    #tl_2014_census_tracts [ perc_water <= 1.99990433083773] {
+       polygon-fill: #41B6C4;
+    }
+    #tl_2014_census_tracts [ perc_water <= 0.782021558262898] {
+       polygon-fill: #A1DAB4;
+    }
+    #tl_2014_census_tracts [ perc_water <= 0.258319771503945] {
+       polygon-fill: #FFFFCC;
+    }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <!-- include cartodb.js library -->
+    <script src="http://libs.cartocdn.com/cartodb.js/v3/cartodb.js"></script>
+
+    <!-- place your code betwee the script tags below -->
+    <script src="main.js"></script>
+  </body>
+</html>

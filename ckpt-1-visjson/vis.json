@@ -1,0 +1,247 @@
+{
+  "id": "c03a644e-e45a-11e4-9d34-0e0c41326911",
+  "version": "0.1.0",
+  "title": "census-tract",
+  "likes": 0,
+  "description": "<p>Common Data resource for US Census Tracts and land use ratios.</p>\n",
+  "scrollwheel": false,
+  "legends": true,
+  "url": null,
+  "map_provider": "leaflet",
+  "bounds": [
+    [
+      28.998531814051795,
+      -115.8837890625
+    ],
+    [
+      48.719961222646276,
+      -56.7333984375
+    ]
+  ],
+  "center": "[39.554883059924016, -86.30859375]",
+  "zoom": 5,
+  "updated_at": "2015-04-20T06:26:23+00:00",
+  "layers": [
+    {
+      "options": {
+        "visible": true,
+        "type": "Tiled",
+        "urlTemplate": "http://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png",
+        "subdomains": "1234",
+        "name": "Positron",
+        "className": "positron_rainbow",
+        "attribution": "\u00a9 <a href=\"http://www.openstreetmap.org/copyright\">OpenStreetMap</a> contributors \u00a9 <a href=\"http://cartodb.com/attributions#basemaps\">CartoDB</a>"
+      },
+      "infowindow": null,
+      "tooltip": null,
+      "id": "b12c5b1b-efb8-4b6b-838c-8cf793d87a22",
+      "order": 0,
+      "parent_id": null,
+      "children": [
+
+      ],
+      "type": "tiled"
+    },
+    {
+      "type": "namedmap",
+      "order": 1,
+      "options": {
+        "type": "namedmap",
+        "user_name": "aureliamoser",
+        "maps_api_template": "https://{user}.cartodb.com:443",
+        "sql_api_template": "https://{user}.cartodb.com:443",
+        "tiler_protocol": "http",
+        "tiler_domain": "cartodb.com",
+        "tiler_port": "80",
+        "cdn_url": {
+          "http": "api.cartocdn.com",
+          "https": "cartocdn.global.ssl.fastly.net"
+        },
+        "dynamic_cdn": false,
+        "named_map": {
+          "name": "tpl_c03a644e_e45a_11e4_9d34_0e0c41326911",
+          "stat_tag": "c03a644e-e45a-11e4-9d34-0e0c41326911",
+          "params": {
+            "layer0": 1
+          },
+          "layers": [
+            {
+              "layer_name": "tl 2014 census tracts",
+              "interactivity": "cartodb_id,a_lw,aland,awater,countyfp,geoid,mtfcc,name,perc_water,statefp,tractce",
+              "visible": true,
+              "tooltip": {
+                "fields": [
+                  {
+                    "position": 0,
+                    "name": "a_lw",
+                    "title": true
+                  },
+                  {
+                    "position": 1,
+                    "name": "aland",
+                    "title": true
+                  },
+                  {
+                    "position": 2,
+                    "name": "awater",
+                    "title": true
+                  },
+                  {
+                    "position": 3,
+                    "name": "countyfp",
+                    "title": true
+                  },
+                  {
+                    "position": 4,
+                    "name": "geoid",
+                    "title": true
+                  },
+                  {
+                    "position": 5,
+                    "name": "mtfcc",
+                    "title": true
+                  },
+                  {
+                    "position": 6,
+                    "name": "name",
+                    "title": true
+                  },
+                  {
+                    "position": 7,
+                    "name": "perc_water",
+                    "title": true
+                  },
+                  {
+                    "position": 8,
+                    "name": "statefp",
+                    "title": true
+                  },
+                  {
+                    "position": 9,
+                    "name": "tractce",
+                    "title": true
+                  }
+                ],
+                "template_name": "",
+                "template": "<div class=\"cartodb-tooltip-content-wrapper\">\n  <div class=\"cartodb-tooltip-content\">\n    <h4>Tract:</h4>\n    <p>{{name}}</p>\n    <h4>% Water/Tract Area:</h4>\n    <p>{{perc_water}}</p>\n  </div>\n</div>",
+                "alternative_names": {
+
+                },
+                "maxHeight": 180
+              },
+              "legend": {
+                "type": "choropleth",
+                "show_title": true,
+                "title": "Water Density by Census Tract",
+                "template": "",
+                "items": [
+                  {
+                    "name": "Left label",
+                    "visible": true,
+                    "value": "<  0.2 %",
+                    "type": "text",
+                    "custom_value": true
+                  },
+                  {
+                    "name": "Right label",
+                    "visible": true,
+                    "value": "< 100 %",
+                    "type": "text",
+                    "custom_value": true
+                  },
+                  {
+                    "name": "Color",
+                    "visible": true,
+                    "value": "#FFFFCC",
+                    "type": "color"
+                  },
+                  {
+                    "name": "Color",
+                    "visible": true,
+                    "value": "#A1DAB4",
+                    "type": "color"
+                  },
+                  {
+                    "name": "Color",
+                    "visible": true,
+                    "value": "#41B6C4",
+                    "type": "color"
+                  },
+                  {
+                    "name": "Color",
+                    "visible": true,
+                    "value": "#2C7FB8",
+                    "type": "color"
+                  },
+                  {
+                    "name": "Color",
+                    "visible": true,
+                    "value": "#253494",
+                    "type": "color"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "overlays": [
+    {
+      "type": "logo",
+      "order": 9,
+      "options": {
+        "display": true,
+        "x": 10,
+        "y": 40
+      },
+      "template": ""
+    },
+    {
+      "type": "loader",
+      "order": 8,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 150
+      },
+      "template": "<div class=\"loader\" original-title=\"\"></div>"
+    },
+    {
+      "type": "zoom",
+      "order": 6,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 20
+      },
+      "template": "<a href=\"#zoom_in\" class=\"zoom_in\">+</a> <a href=\"#zoom_out\" class=\"zoom_out\">-</a>"
+    },
+    {
+      "type": "search",
+      "order": 3,
+      "options": {
+        "display": true,
+        "x": 60,
+        "y": 20
+      },
+      "template": ""
+    },
+    {
+      "type": "share",
+      "order": 2,
+      "options": {
+        "display": true,
+        "x": 20,
+        "y": 20
+      },
+      "template": ""
+    }
+  ],
+  "prev": null,
+  "next": null,
+  "transition_options": {
+    "time": 0
+  }
+}
