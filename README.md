@@ -1,4 +1,4 @@
-# U of M - Color-by-Number Cartography with CartoDB
+# Color-by-Number Cartography with CartoDB
 
 ### CONTENTS
 This repo contains "code checkpoints" for a workshop at the University of Maryland outlined [here]().
@@ -7,7 +7,7 @@ There are reference anchors throughout the outline for when to consult these che
 
 The **Census Map** that we worked on in the workshop presumes limited knowledge in JS and SQL. Most of it was completed in the CartoDB Editor (GUI), the results were exported here it is broken into sections (ckpt-1 through ckpt-5).
 
-<img src="https://raw.githubusercontent.com/auremoser/uofm-2015/master/img/1-mdflag.png" align="center" alt="maryland flag" margin="2px">
+<img src="https://raw.githubusercontent.com/auremoser/uofm-2015/master/img/1-mdflag.png" align="center" alt="maryland flag" margin="5px" height="400" width="650">
 
 * VisJson - ckpt-1-visjson
 * CreateVis Method - ckpt-2-createVis
@@ -15,9 +15,7 @@ The **Census Map** that we worked on in the workshop presumes limited knowledge 
 * SQL and CSS templating - ckpt-4-sqlcss
 * BONUS! Charts - ckpt-5-chart
 
-
 All images used in the tutorial are available in the `img` directory.
-
 
 ### LINKS
 Here are some helpful references for moving forward or troubleshooting what you find here:
