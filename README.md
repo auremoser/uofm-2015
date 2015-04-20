@@ -7,7 +7,7 @@ There are reference anchors throughout the outline for when to consult these che
 
 The **Census Map** that we worked on in the workshop presumes limited knowledge in JS and SQL. Most of it was completed in the CartoDB Editor (GUI), the results were exported here it is broken into sections (ckpt-1 through ckpt-5).
 
-<img src="https://raw.githubusercontent.com/auremoser/uofm-2015/master/img/1-mdflag.png" align="center" alt="maryland flag" margin="5px" height="400" width="650">
+<img src="https://raw.githubusercontent.com/auremoser/uofm-2015/master/img/1-mdflag.png" align="center" alt="maryland flag" margin="5px" height="450" width="700">
 
 * VisJson - ckpt-1-visjson
 * CreateVis Method - ckpt-2-createVis
