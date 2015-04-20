@@ -17,7 +17,7 @@ The **Census Map** that we worked on in the workshop presumes limited knowledge 
 
 All images used in the tutorial are available in the `img` directory.
 
-<img src="https://raw.githubusercontent.com/auremoser/uofm-2015/master/img/divinging-map.png" align="center" alt="maryland flag" margin="5px" height="450" width="700">
+<img src="https://raw.githubusercontent.com/auremoser/uofm-2015/master/img/divining-map.png" align="center" alt="maryland flag" margin="5px" height="450" width="700">
 
 ### LINKS
 Here are some helpful references for moving forward or troubleshooting what you find here:
