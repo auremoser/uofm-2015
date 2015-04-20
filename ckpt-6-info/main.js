@@ -4,7 +4,7 @@ window.onload = function () {
 
    var options = {
        sql: $("#sql").text(), // here you can set sql to run on your tables
-       cartocss: $("#simple").text() // here you can set css to style your vis
+       cartocss: $("#choropleth").text() // here you can set css to style your vis
    }
    // clear sql of space and returns
    options.sql = options.sql.replace(/(\r\n|\n|\r)/gm,'').trim();
@@ -14,7 +14,7 @@ window.onload = function () {
    // instantiate map object from Leaflet
    var mapObj = new L.Map(map, {  // <-- Replace map_id with your #id for rendering
        center: [41.8369, -87.6847], // Chicago, IL
-       zoom: 7 // zoom projection to adjust starting point zoom
+       zoom: 6 // zoom projection to adjust starting point zoom
    });
 
    // CREATE LAYER SELECTOR - AKA BUTTONS
