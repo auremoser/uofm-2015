@@ -1,7 +1,7 @@
 # Color-by-Number Cartography + CartoDB
 
 ### CONTENTS
-This repo contains "code checkpoints" for a workshop at the University of Maryland outlined [here]().
+This repo contains "code checkpoints" for a workshop at the University of Maryland outlined [here](https://stackedit.io/viewer#!provider=gist&gistId=52767f9cc63f23ad5e15&filename=md-wkshp-cartodb.md).
 
 There are reference anchors throughout the outline for when to consult these checkpoints, in case you get lost or want to move at an alternate pace.
 
